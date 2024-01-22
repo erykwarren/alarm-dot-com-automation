@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "module": "commonjs",
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "incremental": true,
+    "isolatedModules": false,
+    "lib": ["dom", "ES2022"],
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "strict": true,
+    "target": "ES2022",
+    "outDir": "dist",
+    "pretty": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "root/*": ["src/*"],
+      "controllers/*": ["src/controllers/*"],
+      "entities/*": ["src/entities/*"],
+      "resources/*": ["src/resources/*"],
+      "services/*": ["src/services/*"],
+      "frontends/*": ["src/frontends/*"],
+      "workers/*": ["src/workers/*"]
+    },
+    "declaration": true,
+    "declarationMap": true,
+    "rootDir": "."
+  },
+  "include": ["src/**/*", "test/**/*", "scripts/**/*"],
+  "exclude": ["src/frontends/**/*", "node_modules"],
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  }
+}
